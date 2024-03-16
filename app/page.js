@@ -4,7 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Button } from "@/components/ui/button.jsx"
+import { Button } from "../Components/ui/button"
 
 export default function Home() {
 

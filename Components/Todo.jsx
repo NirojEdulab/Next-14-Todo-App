@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from "@/components/ui/button"
+import { Button } from "../Components/ui/button"
 
 const Todo = ({ id, title, description, isCompleted, mongoId, deleteTodo, completedTodo }) => {
     return (
