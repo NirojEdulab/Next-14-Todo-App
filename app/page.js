@@ -79,7 +79,7 @@ export default function Home() {
         <button type="submit" className="bg-orange-600 py-3 px-11 text-white">Add</button>
       </form>
 
-      <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-24 w-[60%] mx-auto">
+      {(todoData.length > 0) ? (<div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-24 w-[60%] mx-auto">
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-white uppercase bg-gray-500 dark:bg-white-100 dark:text-white">
             <tr>
@@ -107,7 +107,11 @@ export default function Home() {
           </tbody>
         </table>
       </div>
-
+) : (
+  <div className="flex justify-center">
+    <h2>No Data Found!!!</h2>
+  </div>
+) }
 
 
     </>
