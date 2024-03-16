@@ -2,7 +2,7 @@ import React from 'react'
 
 const Todo = ({ id, title, description, isCompleted, mongoId, deleteTodo, completedTodo }) => {
     return (
-        <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        <tr className="bg-white dark:bg-gray-800">
             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                 {id + 1}
             </th>
